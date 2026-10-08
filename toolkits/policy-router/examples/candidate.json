@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "synthetic-routing",
+  "revision": "candidate",
+  "catalog": [
+    { "provider": "demo", "model": "compact", "contextWindow": 4096 },
+    { "provider": "demo", "model": "large", "contextWindow": 32768 },
+    { "provider": "demo", "model": "specialist", "contextWindow": 16384 }
+  ],
+  "rules": [
+    { "id": "restricted", "priority": 0, "when": { "allTags": ["restricted"] }, "then": { "type": "block", "reason": "restricted_workload" } },
+    { "id": "label-code", "priority": 10, "when": { "modelPattern": "code-*" }, "then": { "type": "tag", "tags": ["code-path"] } },
+    { "id": "code-specialist", "priority": 20, "when": { "allTags": ["code-path"] }, "then": { "type": "route", "target": { "provider": "demo", "model": "specialist" } } },
+    { "id": "small-request", "priority": 30, "when": { "maxInputTokens": 1000 }, "then": { "type": "route", "target": { "provider": "demo", "model": "compact" } } }
+  ],
+  "defaultAction": { "type": "route", "target": { "provider": "demo", "model": "large" } }
+}

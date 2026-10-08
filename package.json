@@ -1,0 +1,30 @@
+{
+  "name": "routeshift",
+  "private": true,
+  "license": "Apache-2.0",
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "test": "turbo test",
+    "typecheck": "turbo typecheck"
+  },
+  "devDependencies": {
+    "remark-parse": "^11.0.0",
+    "turbo": "^2.9.14",
+    "typescript": "^5.7",
+    "unified": "^11.0.5"
+  },
+  "pnpm": {
+    "overrides": {
+      "vite": "^7.3.5",
+      "fast-uri": "^3.1.2",
+      "protobufjs": "^7.6.1",
+      "picomatch": "^4.0.4",
+      "postcss": "^8.5.10",
+      "dompurify": "^3.4.11",
+      "brace-expansion@5": "^5.0.6",
+      "@opentelemetry/core": "^2.8.0"
+    }
+  },
+  "packageManager": "pnpm@10.6.0"
+}

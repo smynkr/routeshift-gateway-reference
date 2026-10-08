@@ -1,0 +1,5191 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-27T19:48:57.736Z",
+  "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+  "recommendations": {
+    "default": "@cf/zai-org/glm-5.3-flash",
+    "economy": "glm-4.5-air",
+    "coding": "Qwen3-Coder-480B-A35B-Instruct",
+    "reasoning": "o4-mini"
+  },
+  "models": [
+    {
+      "id": "claude-3-7-sonnet-20250219",
+      "provider": "anthropic",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.000003",
+        "output": "0.000015",
+        "cache_read": "3e-7",
+        "cache_write": "0.00000375"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "claude-3-haiku-20240307",
+      "provider": "anthropic",
+      "context_length": 200000,
+      "pricing": {
+        "input": "2.5e-7",
+        "output": "0.00000125",
+        "cache_read": "3e-8",
+        "cache_write": "3e-7"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "claude-3-opus-20240229",
+      "provider": "anthropic",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.000015",
+        "output": "0.000075",
+        "cache_read": "0.0000015",
+        "cache_write": "0.00001875"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "claude-4-opus-20250514",
+      "provider": "anthropic",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.000015",
+        "output": "0.000075",
+        "cache_read": "0.0000015",
+        "cache_write": "0.00001875"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "claude-4-sonnet-20250514",
+      "provider": "anthropic",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.000003",
+        "output": "0.000015",
+        "cache_read": "3e-7",
+        "cache_write": "0.00000375"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "claude-fable-5",
+      "provider": "anthropic",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.00001",
+        "output": "0.00005",
+        "cache_read": "0.000001",
+        "cache_write": "0.0000125"
+      },
+      "routing": "auto_or_explicit",
+      "provenance": {
+        "source": "curated"
+      }
+    },
+    {
+      "id": "claude-haiku-4-5",
+      "provider": "anthropic",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.000001",
+        "output": "0.000005",
+        "cache_read": "1.0000000000000001e-7",
+        "cache_write": "0.00000125"
+      },
+      "routing": "auto_or_explicit",
+      "provenance": {
+        "source": "curated"
+      }
+    },
+    {
+      "id": "claude-mythos-5",
+      "provider": "anthropic",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.00001",
+        "output": "0.00005",
+        "cache_read": "0.000001",
+        "cache_write": "0.0000125"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "claude-mythos-preview",
+      "provider": "anthropic",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.00001",
+        "output": "0.00005",
+        "cache_read": "0.000001",
+        "cache_write": "0.0000125"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "claude-opus-4-1",
+      "provider": "anthropic",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.000015",
+        "output": "0.000075",
+        "cache_read": "0.0000015",
+        "cache_write": "0.00001875"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "claude-opus-4-1-20250805",
+      "provider": "anthropic",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.000015",
+        "output": "0.000075",
+        "cache_read": "0.0000015",
+        "cache_write": "0.00001875"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "claude-opus-4-20250514",
+      "provider": "anthropic",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.000015",
+        "output": "0.000075",
+        "cache_read": "0.0000015",
+        "cache_write": "0.00001875"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "claude-opus-4-5",
+      "provider": "anthropic",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.000005",
+        "output": "0.000025",
+        "cache_read": "5e-7",
+        "cache_write": "0.00000625"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated"
+      }
+    },
+    {
+      "id": "claude-opus-4-5-20251101",
+      "provider": "anthropic",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.000005",
+        "output": "0.000025",
+        "cache_read": "5e-7",
+        "cache_write": "0.00000625"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated"
+      }
+    },
+    {
+      "id": "claude-opus-4-6",
+      "provider": "anthropic",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.000005",
+        "output": "0.000025",
+        "cache_read": "5e-7",
+        "cache_write": "0.00000625"
+      },
+      "routing": "auto_or_explicit",
+      "provenance": {
+        "source": "curated"
+      }
+    },
+    {
+      "id": "claude-opus-4-6-20260205",
+      "provider": "anthropic",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.000005",
+        "output": "0.000025",
+        "cache_read": "5e-7",
+        "cache_write": "0.00000625"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated"
+      }
+    },
+    {
+      "id": "claude-opus-4-7",
+      "provider": "anthropic",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.000005",
+        "output": "0.000025",
+        "cache_read": "5e-7",
+        "cache_write": "0.00000625"
+      },
+      "routing": "auto_or_explicit",
+      "provenance": {
+        "source": "curated"
+      }
+    },
+    {
+      "id": "claude-opus-4-7-20260416",
+      "provider": "anthropic",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.000005",
+        "output": "0.000025",
+        "cache_read": "5e-7",
+        "cache_write": "0.00000625"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated"
+      }
+    },
+    {
+      "id": "claude-opus-4-8",
+      "provider": "anthropic",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.000005",
+        "output": "0.000025",
+        "cache_read": "5e-7",
+        "cache_write": "0.00000625"
+      },
+      "routing": "auto_or_explicit",
+      "provenance": {
+        "source": "curated"
+      }
+    },
+    {
+      "id": "claude-opus-5",
+      "provider": "anthropic",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.000005",
+        "output": "0.000025",
+        "cache_read": "5e-7",
+        "cache_write": "0.00000625"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "claude-sonnet-4-20250514",
+      "provider": "anthropic",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.000003",
+        "output": "0.000015",
+        "cache_read": "3e-7",
+        "cache_write": "0.00000375"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "claude-sonnet-4-5",
+      "provider": "anthropic",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.000003",
+        "output": "0.000015",
+        "cache_read": "3e-7",
+        "cache_write": "0.00000375"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated"
+      }
+    },
+    {
+      "id": "claude-sonnet-4-5-20250929",
+      "provider": "anthropic",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.000003",
+        "output": "0.000015",
+        "cache_read": "3e-7",
+        "cache_write": "0.00000375"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated"
+      }
+    },
+    {
+      "id": "claude-sonnet-4-6",
+      "provider": "anthropic",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.000003",
+        "output": "0.000015",
+        "cache_read": "3e-7",
+        "cache_write": "0.00000375"
+      },
+      "routing": "auto_or_explicit",
+      "provenance": {
+        "source": "curated"
+      }
+    },
+    {
+      "id": "claude-sonnet-5",
+      "provider": "anthropic",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.000003",
+        "output": "0.000015",
+        "cache_read": "2.0000000000000002e-7",
+        "cache_write": "0.0000025"
+      },
+      "routing": "auto_or_explicit",
+      "provenance": {
+        "source": "curated"
+      }
+    },
+    {
+      "id": "command-r-plus",
+      "provider": "azure",
+      "context_length": 128000,
+      "pricing": {
+        "input": "0.000003",
+        "output": "0.000015",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gpt-35-turbo",
+      "provider": "azure",
+      "context_length": 4097,
+      "pricing": {
+        "input": "5e-7",
+        "output": "0.0000015",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gpt-35-turbo-0125",
+      "provider": "azure",
+      "context_length": 16384,
+      "pricing": {
+        "input": "5e-7",
+        "output": "0.0000015",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gpt-35-turbo-1106",
+      "provider": "azure",
+      "context_length": 16384,
+      "pricing": {
+        "input": "0.000001",
+        "output": "0.000002",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gpt-35-turbo-16k",
+      "provider": "azure",
+      "context_length": 16385,
+      "pricing": {
+        "input": "0.000003",
+        "output": "0.000004",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gpt-35-turbo-16k-0613",
+      "provider": "azure",
+      "context_length": 16385,
+      "pricing": {
+        "input": "0.000003",
+        "output": "0.000004",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gpt-4-32k",
+      "provider": "azure",
+      "context_length": 32768,
+      "pricing": {
+        "input": "0.00006",
+        "output": "0.00012",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gpt-4-32k-0613",
+      "provider": "azure",
+      "context_length": 32768,
+      "pricing": {
+        "input": "0.00006",
+        "output": "0.00012",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gpt-4-turbo-vision-preview",
+      "provider": "azure",
+      "context_length": 128000,
+      "pricing": {
+        "input": "0.00001",
+        "output": "0.00003",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gpt-4.5-preview",
+      "provider": "azure",
+      "context_length": 128000,
+      "pricing": {
+        "input": "0.000075",
+        "output": "0.00015",
+        "cache_read": "0.0000375",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gpt-5.1-chat",
+      "provider": "azure",
+      "context_length": 128000,
+      "pricing": {
+        "input": "0.00000125",
+        "output": "0.00001",
+        "cache_read": "1.25e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gpt-5.1-chat-2025-11-13",
+      "provider": "azure",
+      "context_length": 128000,
+      "pricing": {
+        "input": "0.00000125",
+        "output": "0.00001",
+        "cache_read": "1.25e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gpt-5.2-chat",
+      "provider": "azure",
+      "context_length": 128000,
+      "pricing": {
+        "input": "0.00000175",
+        "output": "0.000014",
+        "cache_read": "1.75e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gpt-5.2-chat-2025-12-11",
+      "provider": "azure",
+      "context_length": 128000,
+      "pricing": {
+        "input": "0.00000175",
+        "output": "0.000014",
+        "cache_read": "1.75e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gpt-5.3-chat",
+      "provider": "azure",
+      "context_length": 128000,
+      "pricing": {
+        "input": "0.00000175",
+        "output": "0.000014",
+        "cache_read": "1.75e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "o1-mini",
+      "provider": "azure",
+      "context_length": 128000,
+      "pricing": {
+        "input": "0.00000121",
+        "output": "0.00000484",
+        "cache_read": "6.05e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "o1-mini-2024-09-12",
+      "provider": "azure",
+      "context_length": 128000,
+      "pricing": {
+        "input": "0.0000011",
+        "output": "0.0000044",
+        "cache_read": "5.5e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "o1-preview",
+      "provider": "azure",
+      "context_length": 128000,
+      "pricing": {
+        "input": "0.000015",
+        "output": "0.00006",
+        "cache_read": "0.0000075",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "o1-preview-2024-09-12",
+      "provider": "azure",
+      "context_length": 128000,
+      "pricing": {
+        "input": "0.000015",
+        "output": "0.00006",
+        "cache_read": "0.0000075",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "anthropic.claude-3-5-haiku-20241022-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "8.000000000000001e-7",
+        "output": "0.000004",
+        "cache_read": "8e-8",
+        "cache_write": "0.000001"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "anthropic.claude-3-5-sonnet-20240620-v1:0",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.000003",
+        "output": "0.000015",
+        "cache_read": "3e-7",
+        "cache_write": "0.00000375"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "anthropic.claude-3-5-sonnet-20241022-v2:0",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.000003",
+        "output": "0.000015",
+        "cache_read": "3e-7",
+        "cache_write": "0.00000375"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "anthropic.claude-3-7-sonnet-20240620-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.0000036000000000000003",
+        "output": "0.000018",
+        "cache_read": "3.6e-7",
+        "cache_write": "0.0000045"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "anthropic.claude-3-7-sonnet-20250219-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.000003",
+        "output": "0.000015",
+        "cache_read": "3e-7",
+        "cache_write": "0.00000375"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "anthropic.claude-3-haiku-20240307-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "2.5e-7",
+        "output": "0.00000125",
+        "cache_read": "2.5000000000000002e-8",
+        "cache_write": "3.125e-7"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "anthropic.claude-3-opus-20240229-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.000015",
+        "output": "0.000075",
+        "cache_read": "0.0000015",
+        "cache_write": "0.00001875"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "anthropic.claude-3-sonnet-20240229-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.000003",
+        "output": "0.000015",
+        "cache_read": "3e-7",
+        "cache_write": "0.00000375"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "anthropic.claude-fable-5",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.00001",
+        "output": "0.00005",
+        "cache_read": "0.000001",
+        "cache_write": "0.0000125"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "anthropic.claude-haiku-4-5-20251001-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.000001",
+        "output": "0.000005",
+        "cache_read": "1.0000000000000001e-7",
+        "cache_write": "0.00000125"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "anthropic.claude-instant-v1",
+      "provider": "bedrock",
+      "context_length": 100000,
+      "pricing": {
+        "input": "8.000000000000001e-7",
+        "output": "0.0000024",
+        "cache_write": "0.000001"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "anthropic.claude-opus-4-1-20250805-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.000015",
+        "output": "0.000075",
+        "cache_read": "0.0000015",
+        "cache_write": "0.00001875"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "anthropic.claude-opus-4-20250514-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.000015",
+        "output": "0.000075",
+        "cache_read": "0.0000015",
+        "cache_write": "0.00001875"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "anthropic.claude-opus-4-5-20251101-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.000005",
+        "output": "0.000025",
+        "cache_read": "5e-7",
+        "cache_write": "0.00000625"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "anthropic.claude-opus-4-6-v1",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.000005",
+        "output": "0.000025",
+        "cache_read": "5e-7",
+        "cache_write": "0.00000625"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "anthropic.claude-opus-4-7",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.000005",
+        "output": "0.000025",
+        "cache_read": "5e-7",
+        "cache_write": "0.00000625"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "anthropic.claude-opus-4-8",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.000005",
+        "output": "0.000025",
+        "cache_read": "5e-7",
+        "cache_write": "0.00000625"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "anthropic.claude-opus-5",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.000005",
+        "output": "0.000025",
+        "cache_read": "5e-7",
+        "cache_write": "0.00000625"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "anthropic.claude-sonnet-4-20250514-v1:0",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.000003",
+        "output": "0.000015",
+        "cache_read": "3e-7",
+        "cache_write": "0.00000375"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "anthropic.claude-sonnet-4-5-20250929-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.000003",
+        "output": "0.000015",
+        "cache_read": "3e-7",
+        "cache_write": "0.00000375"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "anthropic.claude-sonnet-4-6",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.000003",
+        "output": "0.000015",
+        "cache_read": "3e-7",
+        "cache_write": "0.00000375"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "anthropic.claude-sonnet-5",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.000002",
+        "output": "0.00001",
+        "cache_read": "2.0000000000000002e-7",
+        "cache_write": "0.0000025"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "anthropic.claude-v1",
+      "provider": "bedrock",
+      "context_length": 100000,
+      "pricing": {
+        "input": "0.000008",
+        "output": "0.000024",
+        "cache_write": "0.00001"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "anthropic.claude-v2:1",
+      "provider": "bedrock",
+      "context_length": 100000,
+      "pricing": {
+        "input": "0.000008",
+        "output": "0.000024",
+        "cache_write": "0.00001"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "apac.anthropic.claude-3-5-sonnet-20240620-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.000003",
+        "output": "0.000015",
+        "cache_read": "3e-7",
+        "cache_write": "0.00000375"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "apac.anthropic.claude-3-5-sonnet-20241022-v2:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.000003",
+        "output": "0.000015",
+        "cache_read": "3e-7",
+        "cache_write": "0.00000375"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "apac.anthropic.claude-3-haiku-20240307-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "2.5e-7",
+        "output": "0.00000125",
+        "cache_read": "2.5000000000000002e-8",
+        "cache_write": "3.125e-7"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "apac.anthropic.claude-3-sonnet-20240229-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.000003",
+        "output": "0.000015",
+        "cache_read": "3e-7",
+        "cache_write": "0.00000375"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "apac.anthropic.claude-haiku-4-5-20251001-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.0000011",
+        "output": "0.0000055",
+        "cache_read": "1.1e-7",
+        "cache_write": "0.000001375"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "apac.anthropic.claude-sonnet-4-20250514-v1:0",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.000003",
+        "output": "0.000015",
+        "cache_read": "3e-7",
+        "cache_write": "0.00000375"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "au.anthropic.claude-haiku-4-5-20251001-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.0000011",
+        "output": "0.0000055",
+        "cache_read": "1.1e-7",
+        "cache_write": "0.000001375"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "au.anthropic.claude-opus-4-6-v1",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.0000055",
+        "output": "0.0000275",
+        "cache_read": "5.5e-7",
+        "cache_write": "0.000006875"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "au.anthropic.claude-opus-4-7",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.0000055",
+        "output": "0.0000275",
+        "cache_read": "5.5e-7",
+        "cache_write": "0.000006875"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "au.anthropic.claude-opus-4-8",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.0000055",
+        "output": "0.0000275",
+        "cache_read": "5.5e-7",
+        "cache_write": "0.000006875"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "au.anthropic.claude-opus-5",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.0000055",
+        "output": "0.0000275",
+        "cache_read": "5.5e-7",
+        "cache_write": "0.000006875"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "au.anthropic.claude-sonnet-4-5-20250929-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.0000032999999999999997",
+        "output": "0.0000165",
+        "cache_read": "3.3e-7",
+        "cache_write": "0.000004125"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "au.anthropic.claude-sonnet-4-6",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.0000032999999999999997",
+        "output": "0.0000165",
+        "cache_read": "3.3e-7",
+        "cache_write": "0.000004125"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "au.anthropic.claude-sonnet-5",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.0000022",
+        "output": "0.000011",
+        "cache_read": "2.2e-7",
+        "cache_write": "0.00000275"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "claude-sonnet-4-5-20250929-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.000003",
+        "output": "0.000015",
+        "cache_read": "3e-7",
+        "cache_write": "0.00000375"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "eu.anthropic.claude-3-5-haiku-20241022-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "2.5e-7",
+        "output": "0.00000125",
+        "cache_read": "2.5000000000000002e-8",
+        "cache_write": "3.125e-7"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.000003",
+        "output": "0.000015",
+        "cache_read": "3e-7",
+        "cache_write": "0.00000375"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "eu.anthropic.claude-3-5-sonnet-20241022-v2:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.000003",
+        "output": "0.000015",
+        "cache_read": "3e-7",
+        "cache_write": "0.00000375"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.000003",
+        "output": "0.000015",
+        "cache_read": "3e-7",
+        "cache_write": "0.00000375"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "eu.anthropic.claude-3-haiku-20240307-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "2.5e-7",
+        "output": "0.00000125",
+        "cache_read": "2.5000000000000002e-8",
+        "cache_write": "3.125e-7"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "eu.anthropic.claude-3-opus-20240229-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.000015",
+        "output": "0.000075",
+        "cache_read": "0.0000015",
+        "cache_write": "0.00001875"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "eu.anthropic.claude-3-sonnet-20240229-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.000003",
+        "output": "0.000015",
+        "cache_read": "3e-7",
+        "cache_write": "0.00000375"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "eu.anthropic.claude-fable-5",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.000011",
+        "output": "0.000055",
+        "cache_read": "0.0000011",
+        "cache_write": "0.00001375"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.0000011",
+        "output": "0.0000055",
+        "cache_read": "1.1e-7",
+        "cache_write": "0.000001375"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "eu.anthropic.claude-opus-4-1-20250805-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.000015",
+        "output": "0.000075",
+        "cache_read": "0.0000015",
+        "cache_write": "0.00001875"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "eu.anthropic.claude-opus-4-20250514-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.000015",
+        "output": "0.000075",
+        "cache_read": "0.0000015",
+        "cache_write": "0.00001875"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "eu.anthropic.claude-opus-4-5-20251101-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.000005",
+        "output": "0.000025",
+        "cache_read": "5e-7",
+        "cache_write": "0.00000625"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "eu.anthropic.claude-opus-4-6-v1",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.0000055",
+        "output": "0.0000275",
+        "cache_read": "5.5e-7",
+        "cache_write": "0.000006875"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "eu.anthropic.claude-opus-4-7",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.0000055",
+        "output": "0.0000275",
+        "cache_read": "5.5e-7",
+        "cache_write": "0.000006875"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "eu.anthropic.claude-opus-4-8",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.0000055",
+        "output": "0.0000275",
+        "cache_read": "5.5e-7",
+        "cache_write": "0.000006875"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "eu.anthropic.claude-opus-5",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.0000055",
+        "output": "0.0000275",
+        "cache_read": "5.5e-7",
+        "cache_write": "0.000006875"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "eu.anthropic.claude-sonnet-4-20250514-v1:0",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.000003",
+        "output": "0.000015",
+        "cache_read": "3e-7",
+        "cache_write": "0.00000375"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "eu.anthropic.claude-sonnet-4-5-20250929-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.0000032999999999999997",
+        "output": "0.0000165",
+        "cache_read": "3.3e-7",
+        "cache_write": "0.000004125"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "eu.anthropic.claude-sonnet-4-6",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.0000032999999999999997",
+        "output": "0.0000165",
+        "cache_read": "3.3e-7",
+        "cache_write": "0.000004125"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "eu.anthropic.claude-sonnet-5",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.0000022",
+        "output": "0.000011",
+        "cache_read": "2.2e-7",
+        "cache_write": "0.00000275"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "global.anthropic.claude-fable-5",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.00001",
+        "output": "0.00005",
+        "cache_read": "0.000001",
+        "cache_write": "0.0000125"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "global.anthropic.claude-haiku-4-5-20251001-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.000001",
+        "output": "0.000005",
+        "cache_read": "1.0000000000000001e-7",
+        "cache_write": "0.00000125"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "global.anthropic.claude-opus-4-5-20251101-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.000005",
+        "output": "0.000025",
+        "cache_read": "5e-7",
+        "cache_write": "0.00000625"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "global.anthropic.claude-opus-4-6-v1",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.000005",
+        "output": "0.000025",
+        "cache_read": "5e-7",
+        "cache_write": "0.00000625"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "global.anthropic.claude-opus-4-7",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.000005",
+        "output": "0.000025",
+        "cache_read": "5e-7",
+        "cache_write": "0.00000625"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "global.anthropic.claude-opus-4-8",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.000005",
+        "output": "0.000025",
+        "cache_read": "5e-7",
+        "cache_write": "0.00000625"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "global.anthropic.claude-opus-5",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.000005",
+        "output": "0.000025",
+        "cache_read": "5e-7",
+        "cache_write": "0.00000625"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "global.anthropic.claude-sonnet-4-20250514-v1:0",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.000003",
+        "output": "0.000015",
+        "cache_read": "3e-7",
+        "cache_write": "0.00000375"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "global.anthropic.claude-sonnet-4-5-20250929-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.000003",
+        "output": "0.000015",
+        "cache_read": "3e-7",
+        "cache_write": "0.00000375"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "global.anthropic.claude-sonnet-4-6",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.000003",
+        "output": "0.000015",
+        "cache_read": "3e-7",
+        "cache_write": "0.00000375"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "global.anthropic.claude-sonnet-5",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.000002",
+        "output": "0.00001",
+        "cache_read": "2.0000000000000002e-7",
+        "cache_write": "0.0000025"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "jp.anthropic.claude-haiku-4-5-20251001-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.0000011",
+        "output": "0.0000055",
+        "cache_read": "1.1e-7",
+        "cache_write": "0.000001375"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "jp.anthropic.claude-opus-4-7",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.0000055",
+        "output": "0.0000275",
+        "cache_read": "5.5e-7",
+        "cache_write": "0.000006875"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "jp.anthropic.claude-opus-4-8",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.0000055",
+        "output": "0.0000275",
+        "cache_read": "5.5e-7",
+        "cache_write": "0.000006875"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "jp.anthropic.claude-opus-5",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.0000055",
+        "output": "0.0000275",
+        "cache_read": "5.5e-7",
+        "cache_write": "0.000006875"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "jp.anthropic.claude-sonnet-4-5-20250929-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.0000032999999999999997",
+        "output": "0.0000165",
+        "cache_read": "3.3e-7",
+        "cache_write": "0.000004125"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "jp.anthropic.claude-sonnet-4-6",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.0000032999999999999997",
+        "output": "0.0000165",
+        "cache_read": "3.3e-7",
+        "cache_write": "0.000004125"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "jp.anthropic.claude-sonnet-5",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.0000022",
+        "output": "0.000011",
+        "cache_read": "2.2e-7",
+        "cache_write": "0.00000275"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "us-gov.anthropic.claude-sonnet-4-5-20250929-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.0000036000000000000003",
+        "output": "0.000018",
+        "cache_read": "3.6e-7",
+        "cache_write": "0.0000045"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "us.anthropic.claude-3-5-haiku-20241022-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "8.000000000000001e-7",
+        "output": "0.000004",
+        "cache_read": "8e-8",
+        "cache_write": "0.000001"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "us.anthropic.claude-3-5-sonnet-20240620-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.000003",
+        "output": "0.000015",
+        "cache_read": "3e-7",
+        "cache_write": "0.00000375"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "us.anthropic.claude-3-5-sonnet-20241022-v2:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.000003",
+        "output": "0.000015",
+        "cache_read": "3e-7",
+        "cache_write": "0.00000375"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "us.anthropic.claude-3-7-sonnet-20250219-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.000003",
+        "output": "0.000015",
+        "cache_read": "3e-7",
+        "cache_write": "0.00000375"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "us.anthropic.claude-3-haiku-20240307-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "2.5e-7",
+        "output": "0.00000125",
+        "cache_read": "2.5000000000000002e-8",
+        "cache_write": "3.125e-7"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "us.anthropic.claude-3-opus-20240229-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.000015",
+        "output": "0.000075",
+        "cache_read": "0.0000015",
+        "cache_write": "0.00001875"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "us.anthropic.claude-3-sonnet-20240229-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.000003",
+        "output": "0.000015",
+        "cache_read": "3e-7",
+        "cache_write": "0.00000375"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "us.anthropic.claude-fable-5",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.000011",
+        "output": "0.000055",
+        "cache_read": "0.0000011",
+        "cache_write": "0.00001375"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.0000011",
+        "output": "0.0000055",
+        "cache_read": "1.1e-7",
+        "cache_write": "0.000001375"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "us.anthropic.claude-opus-4-1-20250805-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.000015",
+        "output": "0.000075",
+        "cache_read": "0.0000015",
+        "cache_write": "0.00001875"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "us.anthropic.claude-opus-4-20250514-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.000015",
+        "output": "0.000075",
+        "cache_read": "0.0000015",
+        "cache_write": "0.00001875"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "us.anthropic.claude-opus-4-5-20251101-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.0000055",
+        "output": "0.0000275",
+        "cache_read": "5.5e-7",
+        "cache_write": "0.000006875"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "us.anthropic.claude-opus-4-6-v1",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.0000055",
+        "output": "0.0000275",
+        "cache_read": "5.5e-7",
+        "cache_write": "0.000006875"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "us.anthropic.claude-opus-4-7",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.0000055",
+        "output": "0.0000275",
+        "cache_read": "5.5e-7",
+        "cache_write": "0.000006875"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "us.anthropic.claude-opus-4-8",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.0000055",
+        "output": "0.0000275",
+        "cache_read": "5.5e-7",
+        "cache_write": "0.000006875"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "us.anthropic.claude-opus-5",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.0000055",
+        "output": "0.0000275",
+        "cache_read": "5.5e-7",
+        "cache_write": "0.000006875"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "us.anthropic.claude-sonnet-4-20250514-v1:0",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.000003",
+        "output": "0.000015",
+        "cache_read": "3e-7",
+        "cache_write": "0.00000375"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+      "provider": "bedrock",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.0000032999999999999997",
+        "output": "0.0000165",
+        "cache_read": "3.3e-7",
+        "cache_write": "0.000004125"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "us.anthropic.claude-sonnet-4-6",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.0000032999999999999997",
+        "output": "0.0000165",
+        "cache_read": "3.3e-7",
+        "cache_write": "0.000004125"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "us.anthropic.claude-sonnet-5",
+      "provider": "bedrock",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.0000022",
+        "output": "0.000011",
+        "cache_read": "2.2e-7",
+        "cache_write": "0.00000275"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "@cf/zai-org/glm-5.3-flash",
+      "provider": "cloudflare-workers-ai",
+      "context_length": 1048576,
+      "pricing": {
+        "input": "1.5e-7",
+        "output": "5e-7",
+        "cache_read": "3e-8",
+        "cache_write": "0"
+      },
+      "routing": "auto_or_explicit",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.cloudflare.com/workers-ai/models/glm-5.3-flash/",
+        "source_as_of": "2026-08-29"
+      }
+    },
+    {
+      "id": "gemini-2.0-flash-001",
+      "provider": "google",
+      "context_length": 1048576,
+      "pricing": {
+        "input": "1.0000000000000001e-7",
+        "output": "4.0000000000000003e-7",
+        "cache_read": "2.5000000000000002e-8",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gemini-2.5-computer-use-preview-10-2025",
+      "provider": "google",
+      "context_length": 128000,
+      "pricing": {
+        "input": "0.00000125",
+        "output": "0.00001",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gemini-2.5-flash",
+      "provider": "google",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "1.5e-7",
+        "output": "6e-7",
+        "cache_read": "3e-8",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://ai.google.dev/gemini-api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gemini-2.5-flash-lite",
+      "provider": "google",
+      "context_length": 1048576,
+      "pricing": {
+        "input": "1.0000000000000001e-7",
+        "output": "4.0000000000000003e-7",
+        "cache_read": "1e-8",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://ai.google.dev/gemini-api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gemini-2.5-pro",
+      "provider": "google",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.00000125",
+        "output": "0.00001",
+        "cache_read": "1.25e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://ai.google.dev/gemini-api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gemini-3-flash",
+      "provider": "google",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "5e-7",
+        "output": "0.000003"
+      },
+      "routing": "auto_or_explicit",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://ai.google.dev/gemini-api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gemini-3-pro-preview",
+      "provider": "google",
+      "context_length": 1048576,
+      "pricing": {
+        "input": "0.000002",
+        "output": "0.000012",
+        "cache_read": "2.0000000000000002e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gemini-3.1-flash-lite",
+      "provider": "google",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "2.5e-7",
+        "output": "0.0000015",
+        "cache_read": "2.5000000000000002e-8",
+        "cache_write": "0"
+      },
+      "routing": "auto_or_explicit",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://ai.google.dev/gemini-api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gemini-3.1-pro",
+      "provider": "google",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.000002",
+        "output": "0.000012"
+      },
+      "routing": "auto_or_explicit",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://ai.google.dev/gemini-api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gemini-3.5-flash",
+      "provider": "google",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.0000015",
+        "output": "0.000009",
+        "cache_read": "1.5e-7",
+        "cache_write": "0"
+      },
+      "routing": "auto_or_explicit",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://ai.google.dev/gemini-api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gemini-3.5-flash-lite",
+      "provider": "google",
+      "context_length": 1048576,
+      "pricing": {
+        "input": "3e-7",
+        "output": "0.0000025",
+        "cache_read": "3e-8",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://ai.google.dev/gemini-api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gemini-3.6-flash",
+      "provider": "google",
+      "context_length": 1048576,
+      "pricing": {
+        "input": "7.5e-7",
+        "output": "0.00000375",
+        "cache_read": "7.5e-8",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gemini-3.7-flash",
+      "provider": "google",
+      "context_length": 1048576,
+      "pricing": {
+        "input": "7.5e-7",
+        "output": "0.00000375",
+        "cache_read": "7.5e-8",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://ai.google.dev/gemini-api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gemini-exp-1206",
+      "provider": "google",
+      "context_length": 1048576,
+      "pricing": {
+        "input": "3e-7",
+        "output": "0.0000025",
+        "cache_read": "3e-8",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gemini-flash-latest",
+      "provider": "google",
+      "context_length": 1048576,
+      "pricing": {
+        "input": "3e-7",
+        "output": "0.0000025",
+        "cache_read": "3e-8",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gemini-flash-lite-latest",
+      "provider": "google",
+      "context_length": 1048576,
+      "pricing": {
+        "input": "1.0000000000000001e-7",
+        "output": "4.0000000000000003e-7",
+        "cache_read": "1e-8",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gemini-gemma-2-27b-it",
+      "provider": "google",
+      "context_length": 8192,
+      "pricing": {
+        "input": "3.5e-7",
+        "output": "0.0000010500000000000001",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gemini-gemma-2-9b-it",
+      "provider": "google",
+      "context_length": 8192,
+      "pricing": {
+        "input": "3.5e-7",
+        "output": "0.0000010500000000000001",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gemini-omni-flash-preview",
+      "provider": "google",
+      "context_length": 1048576,
+      "pricing": {
+        "input": "0.0000015",
+        "output": "0.000009",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gemini-pro-latest",
+      "provider": "google",
+      "context_length": 1048576,
+      "pricing": {
+        "input": "0.00000125",
+        "output": "0.00001",
+        "cache_read": "1.25e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gemini-robotics-er-1.5-preview",
+      "provider": "google",
+      "context_length": 1048576,
+      "pricing": {
+        "input": "3e-7",
+        "output": "0.0000025",
+        "cache_read": "0",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gemini-robotics-er-1.6-preview",
+      "provider": "google",
+      "context_length": 131072,
+      "pricing": {
+        "input": "0.000001",
+        "output": "0.000005",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gemini-robotics-er-2-preview",
+      "provider": "google",
+      "context_length": 131072,
+      "pricing": {
+        "input": "0.000002",
+        "output": "0.00001",
+        "cache_read": "2.0000000000000002e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "text-embedding-004",
+      "provider": "google",
+      "context_length": 2048,
+      "pricing": {
+        "input": "2.5000000000000002e-8",
+        "output": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://ai.google.dev/gemini-api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gemma-7b-it",
+      "provider": "groq",
+      "context_length": 8192,
+      "pricing": {
+        "input": "5.0000000000000004e-8",
+        "output": "8e-8",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "llama-3.1-8b-instant",
+      "provider": "groq",
+      "context_length": 131072,
+      "pricing": {
+        "input": "5.0000000000000004e-8",
+        "output": "8e-8",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "llama-3.3-70b-versatile",
+      "provider": "groq",
+      "context_length": 131072,
+      "pricing": {
+        "input": "5.9e-7",
+        "output": "7.900000000000001e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "MiniMax-M2",
+      "provider": "minimax",
+      "context_length": 200000,
+      "pricing": {
+        "input": "3e-7",
+        "output": "0.0000012",
+        "cache_read": "3e-8",
+        "cache_write": "0"
+      },
+      "routing": "auto_or_explicit",
+      "provenance": {
+        "source": "curated"
+      }
+    },
+    {
+      "id": "MiniMax-M3",
+      "provider": "minimax",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "3e-7",
+        "output": "0.0000012",
+        "cache_read": "6e-8",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "kimi-k3",
+      "provider": "moonshot",
+      "context_length": 1048576,
+      "pricing": {
+        "input": "0.000003",
+        "output": "0.000015",
+        "cache_read": "3e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://platform.kimi.ai/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "moonshot-v1-128k",
+      "provider": "moonshot",
+      "context_length": 131072,
+      "pricing": {
+        "input": "0.000002",
+        "output": "0.000005",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "moonshot-v1-128k-0430",
+      "provider": "moonshot",
+      "context_length": 131072,
+      "pricing": {
+        "input": "0.000002",
+        "output": "0.000005",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "moonshot-v1-128k-vision-preview",
+      "provider": "moonshot",
+      "context_length": 131072,
+      "pricing": {
+        "input": "0.000002",
+        "output": "0.000005",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "moonshot-v1-32k",
+      "provider": "moonshot",
+      "context_length": 32768,
+      "pricing": {
+        "input": "0.000001",
+        "output": "0.000003",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "moonshot-v1-32k-0430",
+      "provider": "moonshot",
+      "context_length": 32768,
+      "pricing": {
+        "input": "0.000001",
+        "output": "0.000003",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "moonshot-v1-32k-vision-preview",
+      "provider": "moonshot",
+      "context_length": 32768,
+      "pricing": {
+        "input": "0.000001",
+        "output": "0.000003",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "moonshot-v1-8k",
+      "provider": "moonshot",
+      "context_length": 8192,
+      "pricing": {
+        "input": "2.0000000000000002e-7",
+        "output": "0.000002",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "moonshot-v1-8k-0430",
+      "provider": "moonshot",
+      "context_length": 8192,
+      "pricing": {
+        "input": "2.0000000000000002e-7",
+        "output": "0.000002",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "moonshot-v1-8k-vision-preview",
+      "provider": "moonshot",
+      "context_length": 8192,
+      "pricing": {
+        "input": "2.0000000000000002e-7",
+        "output": "0.000002",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "moonshot-v1-auto",
+      "provider": "moonshot",
+      "context_length": 131072,
+      "pricing": {
+        "input": "0.000002",
+        "output": "0.000005",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "glm-5.2",
+      "provider": "neuralwatt",
+      "context_length": 1048560,
+      "pricing": {
+        "input": "0.0000014499999999999999",
+        "output": "0.0000045",
+        "cache_read": "1.45e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://api.neuralwatt.com/v1/models",
+        "source_as_of": "2026-08-29"
+      }
+    },
+    {
+      "id": "glm-5.2-fast",
+      "provider": "neuralwatt",
+      "context_length": 1048560,
+      "pricing": {
+        "input": "0.0000014499999999999999",
+        "output": "0.0000045",
+        "cache_read": "1.45e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://api.neuralwatt.com/v1/models",
+        "source_as_of": "2026-08-29"
+      }
+    },
+    {
+      "id": "glm-5.2-short",
+      "provider": "neuralwatt",
+      "context_length": 199984,
+      "pricing": {
+        "input": "0.0000014499999999999999",
+        "output": "0.0000045",
+        "cache_read": "1.45e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://api.neuralwatt.com/v1/models",
+        "source_as_of": "2026-08-29"
+      }
+    },
+    {
+      "id": "glm-5.2-short-fast",
+      "provider": "neuralwatt",
+      "context_length": 199984,
+      "pricing": {
+        "input": "0.0000014499999999999999",
+        "output": "0.0000045",
+        "cache_read": "1.45e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://api.neuralwatt.com/v1/models",
+        "source_as_of": "2026-08-29"
+      }
+    },
+    {
+      "id": "glm-5.2-short-fast-flex",
+      "provider": "neuralwatt",
+      "context_length": 199984,
+      "pricing": {
+        "input": "0.0000014499999999999999",
+        "output": "0.0000045",
+        "cache_read": "1.45e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://api.neuralwatt.com/v1/models",
+        "source_as_of": "2026-08-29"
+      }
+    },
+    {
+      "id": "chat-latest",
+      "provider": "openai",
+      "context_length": 400000,
+      "pricing": {
+        "input": "0.000005",
+        "output": "0.00003",
+        "cache_read": "5e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "chatgpt-4o-latest",
+      "provider": "openai",
+      "context_length": 128000,
+      "pricing": {
+        "input": "0.000005",
+        "output": "0.000015",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gpt-3.5-turbo",
+      "provider": "openai",
+      "context_length": 16385,
+      "pricing": {
+        "input": "5e-7",
+        "output": "0.0000015",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gpt-3.5-turbo-0125",
+      "provider": "openai",
+      "context_length": 16385,
+      "pricing": {
+        "input": "5e-7",
+        "output": "0.0000015",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gpt-3.5-turbo-1106",
+      "provider": "openai",
+      "context_length": 16385,
+      "pricing": {
+        "input": "0.000001",
+        "output": "0.000002",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gpt-3.5-turbo-16k",
+      "provider": "openai",
+      "context_length": 16385,
+      "pricing": {
+        "input": "0.000003",
+        "output": "0.000004",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gpt-4",
+      "provider": "openai",
+      "context_length": 8192,
+      "pricing": {
+        "input": "0.00003",
+        "output": "0.00006",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gpt-4-0125-preview",
+      "provider": "openai",
+      "context_length": 128000,
+      "pricing": {
+        "input": "0.00001",
+        "output": "0.00003",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gpt-4-0314",
+      "provider": "openai",
+      "context_length": 8192,
+      "pricing": {
+        "input": "0.00003",
+        "output": "0.00006",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gpt-4-0613",
+      "provider": "openai",
+      "context_length": 8192,
+      "pricing": {
+        "input": "0.00003",
+        "output": "0.00006",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gpt-4-1106-preview",
+      "provider": "openai",
+      "context_length": 128000,
+      "pricing": {
+        "input": "0.00001",
+        "output": "0.00003",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gpt-4-turbo",
+      "provider": "openai",
+      "context_length": 128000,
+      "pricing": {
+        "input": "0.00001",
+        "output": "0.00003",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gpt-4-turbo-2024-04-09",
+      "provider": "openai",
+      "context_length": 128000,
+      "pricing": {
+        "input": "0.00001",
+        "output": "0.00003",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gpt-4-turbo-preview",
+      "provider": "openai",
+      "context_length": 128000,
+      "pricing": {
+        "input": "0.00001",
+        "output": "0.00003",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gpt-4.1",
+      "provider": "openai",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.000002",
+        "output": "0.000008",
+        "cache_read": "5e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gpt-4.1-2025-04-14",
+      "provider": "openai",
+      "context_length": 1047576,
+      "pricing": {
+        "input": "0.000002",
+        "output": "0.000008",
+        "cache_read": "5e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gpt-4.1-mini",
+      "provider": "openai",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "4.0000000000000003e-7",
+        "output": "0.0000016000000000000001",
+        "cache_read": "1.0000000000000001e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gpt-4.1-mini-2025-04-14",
+      "provider": "openai",
+      "context_length": 1047576,
+      "pricing": {
+        "input": "4.0000000000000003e-7",
+        "output": "0.0000016000000000000001",
+        "cache_read": "1.0000000000000001e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gpt-4.1-nano",
+      "provider": "openai",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "1.0000000000000001e-7",
+        "output": "4.0000000000000003e-7",
+        "cache_read": "2.5000000000000002e-8",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gpt-4.1-nano-2025-04-14",
+      "provider": "openai",
+      "context_length": 1047576,
+      "pricing": {
+        "input": "1.0000000000000001e-7",
+        "output": "4.0000000000000003e-7",
+        "cache_read": "2.5000000000000002e-8",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gpt-4o",
+      "provider": "openai",
+      "context_length": 128000,
+      "pricing": {
+        "input": "0.0000025",
+        "output": "0.00001",
+        "cache_read": "0.00000125",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gpt-4o-2024-05-13",
+      "provider": "openai",
+      "context_length": 128000,
+      "pricing": {
+        "input": "0.000005",
+        "output": "0.000015",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "context_length": 128000,
+      "pricing": {
+        "input": "0.0000025",
+        "output": "0.00001",
+        "cache_read": "0.00000125",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gpt-4o-2024-11-20",
+      "provider": "openai",
+      "context_length": 128000,
+      "pricing": {
+        "input": "0.0000025",
+        "output": "0.00001",
+        "cache_read": "0.00000125",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gpt-4o-mini",
+      "provider": "openai",
+      "context_length": 128000,
+      "pricing": {
+        "input": "1.5e-7",
+        "output": "6e-7",
+        "cache_read": "7.5e-8",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gpt-4o-mini-2024-07-18",
+      "provider": "openai",
+      "context_length": 128000,
+      "pricing": {
+        "input": "1.5e-7",
+        "output": "6e-7",
+        "cache_read": "7.5e-8",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gpt-4o-mini-search-preview",
+      "provider": "openai",
+      "context_length": 128000,
+      "pricing": {
+        "input": "1.5e-7",
+        "output": "6e-7",
+        "cache_read": "7.5e-8",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gpt-4o-mini-search-preview-2025-03-11",
+      "provider": "openai",
+      "context_length": 128000,
+      "pricing": {
+        "input": "1.5e-7",
+        "output": "6e-7",
+        "cache_read": "7.5e-8",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gpt-4o-search-preview",
+      "provider": "openai",
+      "context_length": 128000,
+      "pricing": {
+        "input": "0.0000025",
+        "output": "0.00001",
+        "cache_read": "0.00000125",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gpt-4o-search-preview-2025-03-11",
+      "provider": "openai",
+      "context_length": 128000,
+      "pricing": {
+        "input": "0.0000025",
+        "output": "0.00001",
+        "cache_read": "0.00000125",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "gpt-5",
+      "provider": "openai",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.00000125",
+        "output": "0.00001",
+        "cache_read": "1.25e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gpt-5-2025-08-07",
+      "provider": "openai",
+      "context_length": 272000,
+      "pricing": {
+        "input": "0.00000125",
+        "output": "0.00001",
+        "cache_read": "1.25e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gpt-5-chat",
+      "provider": "openai",
+      "context_length": 128000,
+      "pricing": {
+        "input": "0.00000125",
+        "output": "0.00001",
+        "cache_read": "1.25e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gpt-5-chat-latest",
+      "provider": "openai",
+      "context_length": 128000,
+      "pricing": {
+        "input": "0.00000125",
+        "output": "0.00001",
+        "cache_read": "1.25e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gpt-5-mini",
+      "provider": "openai",
+      "context_length": 272000,
+      "pricing": {
+        "input": "2.5e-7",
+        "output": "0.000002",
+        "cache_read": "2.5000000000000002e-8",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gpt-5-mini-2025-08-07",
+      "provider": "openai",
+      "context_length": 272000,
+      "pricing": {
+        "input": "2.5e-7",
+        "output": "0.000002",
+        "cache_read": "2.5000000000000002e-8",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gpt-5-nano",
+      "provider": "openai",
+      "context_length": 272000,
+      "pricing": {
+        "input": "5.0000000000000004e-8",
+        "output": "4.0000000000000003e-7",
+        "cache_read": "5e-9",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gpt-5-nano-2025-08-07",
+      "provider": "openai",
+      "context_length": 272000,
+      "pricing": {
+        "input": "5.0000000000000004e-8",
+        "output": "4.0000000000000003e-7",
+        "cache_read": "5e-9",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gpt-5-search-api",
+      "provider": "openai",
+      "context_length": 272000,
+      "pricing": {
+        "input": "0.00000125",
+        "output": "0.00001",
+        "cache_read": "1.25e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gpt-5-search-api-2025-10-14",
+      "provider": "openai",
+      "context_length": 272000,
+      "pricing": {
+        "input": "0.00000125",
+        "output": "0.00001",
+        "cache_read": "1.25e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gpt-5.1",
+      "provider": "openai",
+      "context_length": 272000,
+      "pricing": {
+        "input": "0.00000125",
+        "output": "0.00001",
+        "cache_read": "1.25e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gpt-5.1-2025-11-13",
+      "provider": "openai",
+      "context_length": 272000,
+      "pricing": {
+        "input": "0.00000125",
+        "output": "0.00001",
+        "cache_read": "1.25e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gpt-5.1-chat-latest",
+      "provider": "openai",
+      "context_length": 128000,
+      "pricing": {
+        "input": "0.00000125",
+        "output": "0.00001",
+        "cache_read": "1.25e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gpt-5.2",
+      "provider": "openai",
+      "context_length": 272000,
+      "pricing": {
+        "input": "0.00000175",
+        "output": "0.000014",
+        "cache_read": "1.75e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gpt-5.2-2025-12-11",
+      "provider": "openai",
+      "context_length": 272000,
+      "pricing": {
+        "input": "0.00000175",
+        "output": "0.000014",
+        "cache_read": "1.75e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gpt-5.2-chat-latest",
+      "provider": "openai",
+      "context_length": 128000,
+      "pricing": {
+        "input": "0.00000175",
+        "output": "0.000014",
+        "cache_read": "1.75e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gpt-5.3-chat-latest",
+      "provider": "openai",
+      "context_length": 128000,
+      "pricing": {
+        "input": "0.00000175",
+        "output": "0.000014",
+        "cache_read": "1.75e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gpt-5.4",
+      "provider": "openai",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.0000025",
+        "output": "0.000015",
+        "cache_read": "2.5e-7",
+        "cache_write": "0",
+        "long_context_threshold": 272000,
+        "input_above_272k": "0.000005",
+        "output_above_272k": "0.0000225",
+        "cache_read_above_272k": "5e-7"
+      },
+      "routing": "auto_or_explicit",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gpt-5.4-2026-03-05",
+      "provider": "openai",
+      "context_length": 1050000,
+      "pricing": {
+        "input": "0.0000025",
+        "output": "0.000015",
+        "cache_read": "2.5e-7",
+        "cache_write": "0",
+        "long_context_threshold": 272000,
+        "input_above_272k": "0.000005",
+        "output_above_272k": "0.0000225",
+        "cache_read_above_272k": "5e-7"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gpt-5.4-mini",
+      "provider": "openai",
+      "context_length": 400000,
+      "pricing": {
+        "input": "7.5e-7",
+        "output": "0.0000045",
+        "cache_read": "7.5e-8",
+        "cache_write": "0"
+      },
+      "routing": "auto_or_explicit",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gpt-5.4-mini-2026-03-17",
+      "provider": "openai",
+      "context_length": 272000,
+      "pricing": {
+        "input": "7.5e-7",
+        "output": "0.0000045",
+        "cache_read": "7.5e-8",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gpt-5.4-nano",
+      "provider": "openai",
+      "context_length": 400000,
+      "pricing": {
+        "input": "2.0000000000000002e-7",
+        "output": "0.00000125",
+        "cache_read": "2e-8",
+        "cache_write": "0"
+      },
+      "routing": "auto_or_explicit",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gpt-5.4-nano-2026-03-17",
+      "provider": "openai",
+      "context_length": 272000,
+      "pricing": {
+        "input": "2.0000000000000002e-7",
+        "output": "0.00000125",
+        "cache_read": "2e-8",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gpt-5.5",
+      "provider": "openai",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.000005",
+        "output": "0.00003",
+        "cache_read": "5e-7",
+        "cache_write": "0",
+        "long_context_threshold": 272000,
+        "input_above_272k": "0.00001",
+        "output_above_272k": "0.000045",
+        "cache_read_above_272k": "0.000001"
+      },
+      "routing": "auto_or_explicit",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gpt-5.5-2026-04-23",
+      "provider": "openai",
+      "context_length": 1050000,
+      "pricing": {
+        "input": "0.000005",
+        "output": "0.00003",
+        "cache_read": "5e-7",
+        "cache_write": "0",
+        "long_context_threshold": 272000,
+        "input_above_272k": "0.00001",
+        "output_above_272k": "0.000045",
+        "cache_read_above_272k": "0.000001"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gpt-5.5-pro",
+      "provider": "openai",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.00003",
+        "output": "0.00018"
+      },
+      "routing": "auto_or_explicit",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gpt-5.6",
+      "provider": "openai",
+      "context_length": 1050000,
+      "pricing": {
+        "input": "0.000004",
+        "output": "0.00002",
+        "cache_read": "4.0000000000000003e-7",
+        "cache_write": "0.000005",
+        "long_context_threshold": 272000,
+        "input_above_272k": "0.000008",
+        "output_above_272k": "0.00003",
+        "cache_read_above_272k": "8.000000000000001e-7",
+        "cache_write_above_272k": "0.00001"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gpt-5.6-luna",
+      "provider": "openai",
+      "context_length": 1050000,
+      "pricing": {
+        "input": "2.0000000000000002e-7",
+        "output": "0.0000012",
+        "cache_read": "2e-8",
+        "cache_write": "2.5e-7",
+        "long_context_threshold": 272000,
+        "input_above_272k": "4.0000000000000003e-7",
+        "output_above_272k": "0.0000018000000000000001",
+        "cache_read_above_272k": "4e-8",
+        "cache_write_above_272k": "5e-7"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gpt-5.6-terra",
+      "provider": "openai",
+      "context_length": 1050000,
+      "pricing": {
+        "input": "0.000002",
+        "output": "0.000012",
+        "cache_read": "2.0000000000000002e-7",
+        "cache_write": "0.0000025",
+        "long_context_threshold": 272000,
+        "input_above_272k": "0.000004",
+        "output_above_272k": "0.000018",
+        "cache_read_above_272k": "4.0000000000000003e-7",
+        "cache_write_above_272k": "0.000005"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gpt-oss-120b",
+      "provider": "openai",
+      "context_length": 128000,
+      "pricing": {
+        "input": "9e-8",
+        "output": "3.6e-7"
+      },
+      "routing": "auto_or_explicit",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "gpt-oss-20b",
+      "provider": "openai",
+      "context_length": 128000,
+      "pricing": {
+        "input": "7e-8",
+        "output": "2.5e-7",
+        "cache_read": "7e-9"
+      },
+      "routing": "auto_or_explicit",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "o1",
+      "provider": "openai",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.000015",
+        "output": "0.00006",
+        "cache_read": "0.0000075",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "o1-2024-12-17",
+      "provider": "openai",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.000015",
+        "output": "0.00006",
+        "cache_read": "0.0000075",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "o3",
+      "provider": "openai",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.000002",
+        "output": "0.000008",
+        "cache_read": "5e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "o3-2025-04-16",
+      "provider": "openai",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.000002",
+        "output": "0.000008",
+        "cache_read": "5e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "o3-mini",
+      "provider": "openai",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.0000011",
+        "output": "0.0000044",
+        "cache_read": "5.5e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "o3-mini-2025-01-31",
+      "provider": "openai",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.0000011",
+        "output": "0.0000044",
+        "cache_read": "5.5e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "o4-mini",
+      "provider": "openai",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.0000011",
+        "output": "0.0000044",
+        "cache_read": "2.75e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "o4-mini-2025-04-16",
+      "provider": "openai",
+      "context_length": 200000,
+      "pricing": {
+        "input": "0.0000011",
+        "output": "0.0000044",
+        "cache_read": "2.75e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "text-embedding-3-large",
+      "provider": "openai",
+      "context_length": 8192,
+      "pricing": {
+        "input": "1.3e-7",
+        "output": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "text-embedding-3-small",
+      "provider": "openai",
+      "context_length": 8192,
+      "pricing": {
+        "input": "2e-8",
+        "output": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://developers.openai.com/api/docs/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "Qwen3-235B-A22B-Instruct-2507",
+      "provider": "qwen",
+      "context_length": 256000,
+      "pricing": {
+        "input": "2.2e-7",
+        "output": "8.8e-7"
+      },
+      "routing": "auto_or_explicit",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://www.alibabacloud.com/help/en/model-studio/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "Qwen3-Coder-480B-A35B-Instruct",
+      "provider": "qwen",
+      "context_length": 256000,
+      "pricing": {
+        "input": "2.2e-7",
+        "output": "0.0000018000000000000001",
+        "cache_read": "2.2e-8",
+        "cache_write": "0"
+      },
+      "routing": "auto_or_explicit",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://www.alibabacloud.com/help/en/model-studio/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "Qwen3-Next-80B-Instruct",
+      "provider": "qwen",
+      "context_length": 128000,
+      "pricing": {
+        "input": "1.5e-7",
+        "output": "0.0000012"
+      },
+      "routing": "auto_or_explicit",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://www.alibabacloud.com/help/en/model-studio/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "Qwen3-Next-80B-Thinking",
+      "provider": "qwen",
+      "context_length": 128000,
+      "pricing": {
+        "input": "1.5e-7",
+        "output": "0.0000012"
+      },
+      "routing": "auto_or_explicit",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://www.alibabacloud.com/help/en/model-studio/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "deepseek-v4-flash",
+      "provider": "qwen",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "2.0000000000000002e-7",
+        "output": "4.0000000000000003e-7",
+        "cache_read": "4e-8",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "deepseek-v4-flash-0731",
+      "provider": "qwen",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "2.0000000000000002e-7",
+        "output": "4.0000000000000003e-7",
+        "cache_read": "4e-8",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "deepseek-v4-pro",
+      "provider": "qwen",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.0000024",
+        "output": "0.0000048",
+        "cache_read": "2.0000000000000002e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "qwen-coder",
+      "provider": "qwen",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "3e-7",
+        "output": "0.0000015",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "qwen-max",
+      "provider": "qwen",
+      "context_length": 30720,
+      "pricing": {
+        "input": "0.0000016000000000000001",
+        "output": "0.0000064000000000000006",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "qwen-plus",
+      "provider": "qwen",
+      "context_length": 129024,
+      "pricing": {
+        "input": "4.0000000000000003e-7",
+        "output": "0.0000012",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "qwen-plus-2025-01-25",
+      "provider": "qwen",
+      "context_length": 129024,
+      "pricing": {
+        "input": "4.0000000000000003e-7",
+        "output": "0.0000012",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "qwen-plus-2025-04-28",
+      "provider": "qwen",
+      "context_length": 129024,
+      "pricing": {
+        "input": "4.0000000000000003e-7",
+        "output": "0.0000012",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "qwen-plus-2025-07-14",
+      "provider": "qwen",
+      "context_length": 129024,
+      "pricing": {
+        "input": "4.0000000000000003e-7",
+        "output": "0.0000012",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "qwen-turbo",
+      "provider": "qwen",
+      "context_length": 129024,
+      "pricing": {
+        "input": "5.0000000000000004e-8",
+        "output": "2.0000000000000002e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "qwen-turbo-2024-11-01",
+      "provider": "qwen",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "5.0000000000000004e-8",
+        "output": "2.0000000000000002e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "qwen-turbo-2025-04-28",
+      "provider": "qwen",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "5.0000000000000004e-8",
+        "output": "2.0000000000000002e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "qwen-turbo-latest",
+      "provider": "qwen",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "5.0000000000000004e-8",
+        "output": "2.0000000000000002e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "qwen3-next-80b-a3b-instruct",
+      "provider": "qwen",
+      "context_length": 262144,
+      "pricing": {
+        "input": "1.5e-7",
+        "output": "0.0000012",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "qwen3-next-80b-a3b-thinking",
+      "provider": "qwen",
+      "context_length": 262144,
+      "pricing": {
+        "input": "1.5e-7",
+        "output": "0.0000012",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "qwen3-vl-235b-a22b-instruct",
+      "provider": "qwen",
+      "context_length": 131072,
+      "pricing": {
+        "input": "4.0000000000000003e-7",
+        "output": "0.0000016000000000000001",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "qwen3-vl-235b-a22b-thinking",
+      "provider": "qwen",
+      "context_length": 131072,
+      "pricing": {
+        "input": "4.0000000000000003e-7",
+        "output": "0.000004",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "qwen3-vl-32b-instruct",
+      "provider": "qwen",
+      "context_length": 131072,
+      "pricing": {
+        "input": "1.6e-7",
+        "output": "6.4e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "qwen3-vl-32b-thinking",
+      "provider": "qwen",
+      "context_length": 131072,
+      "pricing": {
+        "input": "1.6e-7",
+        "output": "0.00000287",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "qwen3.6-flash",
+      "provider": "qwen",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "2.0000000000000002e-7",
+        "output": "6e-7"
+      },
+      "routing": "auto_or_explicit",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://www.alibabacloud.com/help/en/model-studio/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "qwen3.7-max",
+      "provider": "qwen",
+      "context_length": 262144,
+      "pricing": {
+        "input": "0.0000016000000000000001",
+        "output": "0.0000064000000000000006",
+        "cache_read": "5e-7",
+        "cache_write": "0"
+      },
+      "routing": "auto_or_explicit",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://www.alibabacloud.com/help/en/model-studio/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "qwen3.7-plus",
+      "provider": "qwen",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "8.000000000000001e-7",
+        "output": "0.000002"
+      },
+      "routing": "auto_or_explicit",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://www.alibabacloud.com/help/en/model-studio/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "qwen3.8-max",
+      "provider": "qwen",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0.000002",
+        "output": "0.000006",
+        "cache_read": "2.0000000000000002e-7",
+        "cache_write": "0.0000025"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated",
+        "source_url": "https://www.alibabacloud.com/help/en/model-studio/models",
+        "source_as_of": "2026-08-26"
+      }
+    },
+    {
+      "id": "qwq-plus",
+      "provider": "qwen",
+      "context_length": 98304,
+      "pricing": {
+        "input": "8.000000000000001e-7",
+        "output": "0.0000024",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "together-ai-8.1b-21b",
+      "provider": "together",
+      "context_length": 1000,
+      "pricing": {
+        "input": "3e-7",
+        "output": "3e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "mimo-v2-flash",
+      "provider": "xiaomi",
+      "context_length": 128000,
+      "pricing": {
+        "input": "0",
+        "output": "0",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated"
+      }
+    },
+    {
+      "id": "mimo-v2.5-pro",
+      "provider": "xiaomi",
+      "context_length": 1000000,
+      "pricing": {
+        "input": "0",
+        "output": "0",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "curated"
+      }
+    },
+    {
+      "id": "glm-4-32b-0414-128k",
+      "provider": "zai",
+      "context_length": 128000,
+      "pricing": {
+        "input": "1.0000000000000001e-7",
+        "output": "1.0000000000000001e-7",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "glm-4.5",
+      "provider": "zai",
+      "context_length": 128000,
+      "pricing": {
+        "input": "3e-7",
+        "output": "0.0000014",
+        "cache_write": "0"
+      },
+      "routing": "auto_or_explicit",
+      "provenance": {
+        "source": "curated"
+      }
+    },
+    {
+      "id": "glm-4.5-air",
+      "provider": "zai",
+      "context_length": 128000,
+      "pricing": {
+        "input": "5.0000000000000004e-8",
+        "output": "2.0000000000000002e-7",
+        "cache_write": "0"
+      },
+      "routing": "auto_or_explicit",
+      "provenance": {
+        "source": "curated"
+      }
+    },
+    {
+      "id": "glm-4.5v",
+      "provider": "zai",
+      "context_length": 128000,
+      "pricing": {
+        "input": "6e-7",
+        "output": "0.0000018000000000000001",
+        "cache_write": "0"
+      },
+      "routing": "explicit_only",
+      "provenance": {
+        "source": "generated",
+        "source_url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "source_hash": "1299e5393495d50ff695d54a5280c1880646cc524e04ae8a88fb3f7f3998e3e6",
+        "source_as_of": "2026-08-27T19:48:57.736Z"
+      }
+    },
+    {
+      "id": "glm-4.6",
+      "provider": "zai",
+      "context_length": 200000,
+      "pricing": {
+        "input": "6e-7",
+        "output": "0.0000022",
+        "cache_read": "1.1e-7",
+        "cache_write": "0"
+      },
+      "routing": "auto_or_explicit",
+      "provenance": {
+        "source": "curated"
+      }
+    },
+    {
+      "id": "glm-4.7",
+      "provider": "zai",
+      "context_length": 200000,
+      "pricing": {
+        "input": "6e-7",
+        "output": "0.0000022",
+        "cache_read": "1.1e-7",
+        "cache_write": "0"
+      },
+      "routing": "auto_or_explicit",
+      "provenance": {
+        "source": "curated"
+      }
+    },
+    {
+      "id": "glm-5",
+      "provider": "zai",
+      "context_length": 256000,
+      "pricing": {
+        "input": "0.000001",
+        "output": "0.0000032000000000000003",
+        "cache_read": "1.0000000000000001e-7",
+        "cache_write": "0"
+      },
+      "routing": "auto_or_explicit",
+      "provenance": {
+        "source": "curated"
+      }
+    },
+    {
+      "id": "glm-5-turbo",
+      "provider": "zai",
+      "context_length": 128000,
+      "pricing": {
+        "input": "2.0000000000000002e-7",
+        "output": "8.000000000000001e-7"
+      },
+      "routing": "auto_or_explicit",
+      "provenance": {
+        "source": "curated"
+      }
+    },
+    {
+      "id": "glm-5.1",
+      "provider": "zai",
+      "context_length": 256000,
+      "pricing": {
+        "input": "0.000001",
+        "output": "0.0000035",
+        "cache_read": "2.6e-7",
+        "cache_write": "0"
+      },
+      "routing": "auto_or_explicit",
+      "provenance": {
+        "source": "curated"
+      }
+    }
+  ]
+}

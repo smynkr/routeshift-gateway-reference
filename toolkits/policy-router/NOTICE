@@ -1,0 +1,12 @@
+RouteShift Policy Router
+Copyright 2026 RouteShift contributors
+
+This toolkit originates from RouteShift's ordered policy-routing work.
+Its standalone contract adds strict input validation, immutable evaluation,
+execution-derived explanations and replay without the hosted gateway.
+
+The original source, documentation and synthetic examples in this package
+are licensed under Apache-2.0. The package does not include RouteShift's
+vendor catalogs, pricing snapshots, benchmark datasets or brand assets.
+Development tools are separately licensed by their respective authors;
+they are not bundled runtime dependencies of this package.

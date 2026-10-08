@@ -1,0 +1,5 @@
+{"provider":"demo","model":"general","inputTokens":2000,"outputTokens":512,"tags":[]}
+{"provider":"demo","model":"code-review","inputTokens":2000,"outputTokens":1024,"tags":[]}
+{"provider":"demo","model":"general","inputTokens":500,"outputTokens":256,"tags":["restricted"]}
+{"provider":"demo","model":"general","inputTokens":2800,"outputTokens":2000,"tags":[]}
+{"provider":"demo","model":"general","inputTokens":40000,"outputTokens":0,"tags":[]}

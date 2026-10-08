@@ -1,0 +1,59 @@
+{
+  "name": "@routeshift/shared",
+  "version": "0.0.0",
+  "private": true,
+  "license": "(Apache-2.0 AND MIT)",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./current-models.generated": {
+      "types": "./dist/current-models.generated.d.ts",
+      "import": "./dist/current-models.generated.mjs",
+      "require": "./dist/current-models.generated.js"
+    },
+    "./routing-browser": {
+      "types": "./dist/routing-browser.d.ts",
+      "import": "./dist/routing-browser.mjs",
+      "require": "./dist/routing-browser.js"
+    },
+    "./routing": {
+      "types": "./dist/routing.d.ts",
+      "import": "./dist/routing.mjs",
+      "require": "./dist/routing.js"
+    },
+    "./shadow-routing": {
+      "types": "./dist/shadow-routing.d.ts",
+      "import": "./dist/shadow-routing.mjs",
+      "require": "./dist/shadow-routing.js"
+    },
+    "./provider-key-envelope": {
+      "types": "./dist/provider-key-envelope.d.ts",
+      "import": "./dist/provider-key-envelope.mjs",
+      "require": "./dist/provider-key-envelope.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts src/current-models.generated.ts src/routing.ts src/routing-browser.ts src/shadow-routing.ts src/provider-key-envelope.ts --format cjs,esm --dts",
+    "dev": "tsup src/index.ts src/current-models.generated.ts src/routing.ts src/routing-browser.ts src/shadow-routing.ts src/provider-key-envelope.ts --format cjs,esm --dts --watch",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "typecheck": "tsc --noEmit",
+    "sync-pricing": "pnpm run refresh-catalog",
+    "refresh-catalog": "tsx scripts/catalog-refresh.ts",
+    "detect-models": "tsx scripts/detect-model-drift.ts",
+    "propose-parked": "tsx scripts/propose-parked-models.ts",
+    "promote-model": "tsx scripts/promote-model.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0",
+    "@vitest/coverage-v8": "^3.2.6",
+    "tsup": "^8.5",
+    "tsx": "^4.19",
+    "vitest": "^3.2.6"
+  }
+}

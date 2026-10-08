@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f2f4f3">
+    <meta name="description" content="A local, explainable policy-routing workbench using synthetic fixtures.">
+    <title>Policy Router · Local Workbench</title>
+    <link rel="stylesheet" href="/style.css">
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body>
+    <header class="masthead">
+      <a class="wordmark" href="/" aria-label="Policy Router local workbench home">
+        <span class="wordmark-mark" aria-hidden="true">PR</span>
+        <span>POLICY ROUTER<span class="wordmark-divider">/</span>WORKBENCH</span>
+      </a>
+      <div class="release-label">LOCAL TOOL · UNMAINTAINED</div>
+    </header>
+
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <div class="intro-copy">
+          <p class="eyebrow">DETERMINISTIC ROUTING · HUMAN-READABLE EVIDENCE</p>
+          <h1 id="page-title">See how a policy<br class="desktop-break"> selects a route.</h1>
+          <p class="intro-lede">Edit two policies and a request, then inspect the exact rule path and condition evidence returned by the local engine.</p>
+        </div>
+        <aside class="scope-note" aria-label="Workbench scope and limitations">
+          <div class="scope-flags">
+            <span class="scope-flag">SYNTHETIC FIXTURES</span>
+            <span class="scope-flag">LOCAL ONLY</span>
+            <span class="scope-flag">NO PAID CALLS</span>
+          </div>
+          <p>Routing selection only. This does not dispatch to a provider, authorize requests, estimate tokens, or measure model quality or performance.</p>
+        </aside>
+      </section>
+
+      <section class="workbench" aria-labelledby="inputs-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">01 / INPUTS</p>
+            <h2 id="inputs-heading">Policy and request</h2>
+          </div>
+          <p class="section-note">Fixture selection replaces all three editors. Editing clears the visible result.</p>
+        </div>
+
+        <div class="scenario-bar">
+          <label for="scenario-select">Load a synthetic scenario</label>
+          <select id="scenario-select" name="scenario" aria-describedby="scenario-help">
+            <option value="default">Example request · general model</option>
+            <option value="1">Request 1 · small request</option>
+            <option value="2">Request 2 · code-review model</option>
+            <option value="3">Request 3 · restricted tag</option>
+            <option value="4">Request 4 · capacity fallback</option>
+            <option value="5">Request 5 · default capacity block</option>
+          </select>
+          <p id="scenario-help">Loads the shipped baseline, candidate, and request fixtures. Changes in the editors are not preserved.</p>
+        </div>
+
+        <div class="policy-grid">
+          <div class="editor-card">
+            <div class="editor-card-heading">
+              <div>
+                <p class="eyebrow">BASELINE</p>
+                <h3>Current policy</h3>
+              </div>
+              <span class="editor-index" aria-hidden="true">A</span>
+            </div>
+            <label class="sr-only" for="baseline-policy">Baseline policy JSON</label>
+            <textarea id="baseline-policy" name="baseline-policy" spellcheck="false" autocapitalize="off" autocomplete="off" aria-describedby="baseline-help" rows="19"></textarea>
+            <p class="editor-help" id="baseline-help">Edit valid policy JSON. This is a local fixture, not an active routing configuration.</p>
+          </div>
+
+          <div class="editor-card">
+            <div class="editor-card-heading">
+              <div>
+                <p class="eyebrow">CANDIDATE</p>
+                <h3>Proposed policy</h3>
+              </div>
+              <span class="editor-index" aria-hidden="true">B</span>
+            </div>
+            <label class="sr-only" for="candidate-policy">Candidate policy JSON</label>
+            <textarea id="candidate-policy" name="candidate-policy" spellcheck="false" autocapitalize="off" autocomplete="off" aria-describedby="candidate-help" rows="19"></textarea>
+            <p class="editor-help" id="candidate-help">Edit valid policy JSON. Policy revisions are caller labels, not signatures.</p>
+          </div>
+        </div>
+
+        <div class="request-card">
+          <div class="editor-card-heading">
+            <div>
+              <p class="eyebrow">REQUEST</p>
+              <h3>Routing input</h3>
+            </div>
+            <span class="editor-index" aria-hidden="true">C</span>
+          </div>
+          <label class="sr-only" for="request-json">Request JSON</label>
+          <textarea id="request-json" name="request-json" spellcheck="false" autocapitalize="off" autocomplete="off" aria-describedby="request-help" rows="7"></textarea>
+          <p class="editor-help" id="request-help">Input/output token counts and tags are explicit fixture data; no model calls are made.</p>
+        </div>
+
+        <div class="action-row" aria-label="Evaluation actions">
+          <button id="evaluate-baseline" class="button button-secondary" type="button">Evaluate baseline</button>
+          <button id="evaluate-candidate" class="button button-secondary" type="button">Evaluate candidate</button>
+          <button id="compare-policies" class="button button-primary" type="button">Compare policies</button>
+        </div>
+      </section>
+
+      <section id="feedback" class="feedback" aria-label="Workbench status">
+        <p id="run-status" class="run-status" role="status" aria-live="polite">Loading local synthetic fixtures…</p>
+        <div id="error-panel" class="error-panel" role="alert" hidden></div>
+      </section>
+
+      <section id="results" class="results" aria-labelledby="results-heading" hidden>
+        <div class="section-heading result-heading">
+          <div>
+            <p class="eyebrow">02 / EVIDENCE</p>
+            <h2 id="results-heading">Execution result</h2>
+          </div>
+          <p id="result-summary" class="section-note"></p>
+        </div>
+        <div id="result-content" class="result-content"></div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <span>LOCAL POLICY SELECTION · NO NETWORK DISPATCH</span>
+      <span>EXPLANATIONS REFLECT THIS ENGINE VERSION AND THESE INPUTS</span>
+    </footer>
+  </body>
+</html>

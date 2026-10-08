@@ -1,0 +1,7 @@
+{
+  "provider": "demo",
+  "model": "general",
+  "inputTokens": 2000,
+  "outputTokens": 512,
+  "tags": []
+}

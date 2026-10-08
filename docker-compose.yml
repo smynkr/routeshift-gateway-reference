@@ -1,0 +1,77 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    ports: ["127.0.0.1:5432:5432"]
+    environment:
+      POSTGRES_DB: prismproxy
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes: [pg_data:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  clickhouse:
+    image: clickhouse/clickhouse-server:24-alpine
+    ports: ["127.0.0.1:8123:8123"]
+    volumes:
+      - ch_data:/var/lib/clickhouse
+      - ./apps/proxy/src/db/clickhouse-schema.sql:/docker-entrypoint-initdb.d/schema.sql:ro
+    healthcheck:
+      test: ["CMD", "clickhouse-client", "--query", "SELECT 1"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  proxy:
+    build:
+      context: .
+      dockerfile: apps/proxy/Dockerfile
+    ports: ["127.0.0.1:4000:4000"]
+    depends_on:
+      postgres: { condition: service_healthy }
+      clickhouse: { condition: service_healthy }
+    env_file: .env
+    environment:
+      NODE_ENV: production
+      PORT: "4000"
+      ADMIN_SECRET: ${ADMIN_SECRET:?Generate ADMIN_SECRET in .env}
+      PROVIDER_KEY_SECRET: ${PROVIDER_KEY_SECRET:?Generate PROVIDER_KEY_SECRET in .env}
+      DATABASE_URL: postgresql://postgres:postgres@postgres:5432/prismproxy
+      CLICKHOUSE_URL: http://clickhouse:8123
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q -O /dev/null http://localhost:4000/health"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  dashboard:
+    build:
+      context: .
+      dockerfile: apps/dashboard/Dockerfile
+      args:
+        NEXT_PUBLIC_APP_URL: ${NEXT_PUBLIC_APP_URL:-http://localhost:3000}
+        NEXT_PUBLIC_PROXY_URL: ${NEXT_PUBLIC_PROXY_URL:-http://localhost:4000}
+        NEXT_PUBLIC_GA_MEASUREMENT_ID: ${NEXT_PUBLIC_GA_MEASUREMENT_ID:-}
+        NEXT_PUBLIC_POSTHOG_KEY: ${NEXT_PUBLIC_POSTHOG_KEY:-}
+        NEXT_PUBLIC_POSTHOG_HOST: ${NEXT_PUBLIC_POSTHOG_HOST:-}
+        NEXT_PUBLIC_AMPLITUDE_API_KEY: ${NEXT_PUBLIC_AMPLITUDE_API_KEY:-}
+        NEXT_PUBLIC_MIXPANEL_TOKEN: ${NEXT_PUBLIC_MIXPANEL_TOKEN:-}
+    ports: ["127.0.0.1:3000:3000"]
+    depends_on:
+      proxy: { condition: service_healthy }
+    env_file: .env
+    environment:
+      NODE_ENV: production
+      PORT: "3000"
+      AUTH_SECRET: ${AUTH_SECRET:?Generate AUTH_SECRET in .env}
+      AUTH_TRUST_HOST: "true"
+      AUTH_URL: ${NEXT_PUBLIC_APP_URL:-http://localhost:3000}
+      DATABASE_URL: postgresql://postgres:postgres@postgres:5432/prismproxy
+      PROXY_URL: http://proxy:4000
+
+volumes:
+  pg_data:
+  ch_data:

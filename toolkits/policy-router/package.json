@@ -1,0 +1,27 @@
+{
+  "name": "@routeshift/policy-router",
+  "version": "1.0.1",
+  "private": true,
+  "description": "Deterministic, explainable policy routing with replay and a local workbench",
+  "license": "Apache-2.0",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" }
+  },
+  "bin": { "route-policy": "./dist/cli.js" },
+  "files": ["dist", "src", "web", "examples", "tests", "tsconfig.json", "README.md", "CHANGELOG.md", "LICENSE", "NOTICE"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --test tests/*.test.mjs",
+    "demo": "node dist/cli.js demo",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "22.19.15",
+    "typescript": "5.9.3"
+  }
+}

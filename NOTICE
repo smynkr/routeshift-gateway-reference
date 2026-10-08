@@ -1,0 +1,23 @@
+RouteShift Gateway Reference
+Copyright 2026 RouteShift contributors
+
+Original source code, original documentation and synthetic examples in this
+source archive are licensed under the Apache License, Version 2.0, except
+where another license is identified. The separately released policy-router
+toolkit retains its own LICENSE and NOTICE.
+
+Generated model/pricing data derived from LiteLLM includes content licensed
+under MIT, Copyright (c) 2023 Berri AI. The required notice and covered paths
+are in THIRD_PARTY_NOTICES.md. Apache-2.0 does not replace that license.
+
+Provider names, model identifiers and factual specification/price records
+identify interoperability and historical inputs. No ownership of third-party
+trademarks or exclusive rights in facts is claimed. No provider endorsement,
+service access, future price accuracy or model availability is granted.
+
+Installed dependencies, downloaded fonts and optional native libraries are
+not included in this source-only distribution and retain their own licenses.
+A downstream binary/container distributor must meet those separate obligations.
+
+This reference release is unmaintained and provided as-is, without an upstream
+support, hosted-service or security-update commitment.

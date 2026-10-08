@@ -1,0 +1,38 @@
+{
+  "name": "@routeshift/proxy",
+  "version": "0.0.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsup src/index.ts src/resolve-unknown-cost-hold-cli.ts --format esm && mkdir -p dist/migrations && cp -r src/db/migrations/. dist/migrations/",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "bench:latency": "tsx src/benchmarks/run-latency-benchmark.ts",
+    "billing:resolve-unknown-hold": "node dist/resolve-unknown-cost-hold-cli.js",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@aws-sdk/client-kms": "^3.1079.0",
+    "@routeshift/shared": "workspace:*",
+    "@sentry/node": "^10.48.0",
+    "aws4": "^1.13.2",
+    "jose": "^6.2.3",
+    "pdf-parse": "1.1.1",
+    "pg": "^8.20.0",
+    "posthog-node": "^5.49.1",
+    "stripe": "^20.4.1",
+    "undici": "^7.28.0"
+  },
+  "devDependencies": {
+    "@types/aws4": "^1.11.6",
+    "@types/node": "^22.0",
+    "@types/pg": "^8.18.0",
+    "@vitest/coverage-v8": "^3.2.6",
+    "tsup": "^8.5",
+    "tsx": "^4.19",
+    "vitest": "^3.2.6"
+  }
+}
